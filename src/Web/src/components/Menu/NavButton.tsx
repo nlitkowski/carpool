@@ -6,10 +6,11 @@ interface Props {
   forwardTo: string;
 }
 
-export const NavButton: React.FC<Props> = () => {
+export const NavButton = (name: string) => {
   return (
     <>
-      <a href="/" className="link">
+      <button className="button">{name}</button>
+      <a href="/asdfa" className="link">
         <div className="title">Work</div>
         <div className="bar"></div>
       </a>

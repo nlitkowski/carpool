@@ -1,11 +1,13 @@
 /* scss is baisicly css but with some more features*/
-@import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800");
 html,
 body {
-  font-family: "Dosis";
+  font-family: "Montserrat";
   font-weight: 300;
 }
-
+.button {
+  padding: 7px;
+}
 .header {
   width: 100%;
   border-bottom: 1px solid black;
