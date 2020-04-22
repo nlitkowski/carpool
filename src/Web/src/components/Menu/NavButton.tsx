@@ -1,4 +1,5 @@
 import React from "react";
+import "./NavButton.scss";
 
 interface Props {
   name: string;
@@ -8,7 +9,10 @@ interface Props {
 export const NavButton: React.FC<Props> = () => {
   return (
     <>
-      <button></button>
+      <a href="/" className="link">
+        <div className="title">Work</div>
+        <div className="bar"></div>
+      </a>
     </>
   );
 };

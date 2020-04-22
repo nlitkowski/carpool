@@ -2,12 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Switch } from "react-router";
 import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
-//import { Hello } from "./components/Hello/Hello";
-//import { Menu } from "./components/Menu/Menu";
+import { NavButton } from "./Components/Menu/NavButton";
 
-import { NavButton } from "./components/Menu/NavButton";
-
-export default class App extends Component {
+export class App extends Component {
   render() {
     return (
       <React.Fragment>
