@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Switch } from "react-router";
 import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
-import { NavButton } from "./Components/Menu/NavButton";
+import { NavBar } from "./components/Menu/NavBar";
 
 export class App extends Component {
   render() {
@@ -11,7 +11,7 @@ export class App extends Component {
         <Router>
           <BreadcrumbsProvider>
             <Switch>
-              <Route path={"/"} component={NavButton} />
+              <Route path={"/"} component={() => <NavBar />} />
             </Switch>
           </BreadcrumbsProvider>
         </Router>

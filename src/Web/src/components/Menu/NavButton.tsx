@@ -6,10 +6,10 @@ interface Props {
   forwardTo: string;
 }
 
-export const NavButton = (name: string) => {
+export const NavButton = (props: Props) => {
   return (
     <>
-      <button className="button">{name}</button>
+      <button className="button">{props.name}</button>
       <a href="/asdfa" className="link">
         <div className="title">Work</div>
         <div className="bar"></div>
